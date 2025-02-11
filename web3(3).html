@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web3.css">
+    <title>Кинотеатр</title>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в наш кинотеатр!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Фильмы</a></li>
+                <li><a href="web3(2).html">Расписание</a></li>
+                <li><a href="web3(3).html">Билеты</a></li>
+                <li><a href="web3(4).html">администратор</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Покупка билетов -->
+    <section id="tickets">
+        <h2>Купить билеты</h2>
+        <form id="ticket-form">
+            <label for="film-select">Выберите фильм:</label>
+            <select id="film-select"></select>
+            <div id="seat-map">
+                <h3>Выберите место:</h3>
+                <div class="seat-rows">
+                    <!-- Ряды и места будут добавляться через JavaScript -->
+                </div>
+                <p>Выбрано мест: <span id="selected-seats-count">0</span></p>
+                <p>Общая стоимость: <span id="total-price">0</span> руб.</p>
+            </div>
+            <button type="submit">Перейти к оплате</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Кинотеатр. Все права защищены.</p>
+    </footer>
+    <script src="web3.js"></script>
+</body>
+</html>
